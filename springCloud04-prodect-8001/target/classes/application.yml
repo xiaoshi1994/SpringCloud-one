@@ -29,3 +29,9 @@ eureka:
     instance:
       instance-id: springCloud04-prodect-8001
       prfer-ip-address: true  #访问路径可以显示ip地址
+
+info:
+  app.name: springCloud04-prodect-8001
+  company.name: com.shi
+  build.artifactId: springCloud04-prodect-8001
+  build.version: 0.0.1-SNAPSHOT

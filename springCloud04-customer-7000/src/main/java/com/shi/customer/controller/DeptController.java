@@ -1,10 +1,12 @@
 package com.shi.customer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
 
@@ -36,6 +38,12 @@ public class DeptController {
 	@ResponseBody
 	public List list(){
 		return restTemplate.getForObject(REST_URL_PREFIX + "/dept/list", List.class);
+	}
+	
+	//测试@EnableDiscoveryClient，消费端可以调用服务发现
+	@GetMapping("/consumer/dept/discovery")
+	public Object discover() {
+		return restTemplate.getForObject(REST_URL_PREFIX + "/dept/discovery", Object.class);
 	}
 	
 }
