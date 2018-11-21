@@ -5,7 +5,7 @@
     <artifactId>springCloud-04</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>springCloud04-Eureka-9000</artifactId>
+  <artifactId>springCloud04-Eureka-9001</artifactId>
   
   <dependencies>
   		<!--eureka-server服务端 -->

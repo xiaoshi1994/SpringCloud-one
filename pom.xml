@@ -90,6 +90,8 @@
   	<module>springCloud04-prodect-8001</module>
   	<module>springCloud04-customer-7000</module>
   	<module>springCloud04-core</module>
-  	<module>springCloud04-Eureka-9000</module>
+  	<module>springCloud04-Eureka-9001</module>
+  	<module>springCloud04-Eureka-9002</module>
+  	<module>springCloud04-Eureka-9003</module>
   </modules>
 </project>
