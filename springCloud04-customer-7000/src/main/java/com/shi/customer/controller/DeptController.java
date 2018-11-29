@@ -17,7 +17,8 @@ import antlr.collections.List;
 @Controller
 public class DeptController {
 	
-	private static final String REST_URL_PREFIX = "http://127.0.0.1:8001";
+	//private static final String REST_URL_PREFIX = "http://127.0.0.1:8001";
+	private static final String REST_URL_PREFIX = "http://SPRINGCLOUD04-PRODECT-8001";
 	
 	@Autowired
 	private RestTemplate restTemplate;
@@ -30,14 +31,15 @@ public class DeptController {
 	
 	@GetMapping("/consumer/dept/get/{id}")
 	@ResponseBody
-	public Dept get(@PathVariable("id") Integer id) {
-		return restTemplate.getForObject(REST_URL_PREFIX+"/dept/get/"+id, Dept.class);
+	public Object get(@PathVariable("id") Integer id) {
+		return restTemplate.getForObject(REST_URL_PREFIX+"/dept/get/"+id, Object.class);
 	}
 	
 	@GetMapping("/consumer/dept/list")
 	@ResponseBody
-	public List list(){
-		return restTemplate.getForObject(REST_URL_PREFIX + "/dept/list", List.class);
+	public Object list(){
+		Object list = restTemplate.getForObject(REST_URL_PREFIX + "/dept/list", Object.class);
+		return list;
 	}
 	
 	//测试@EnableDiscoveryClient，消费端可以调用服务发现
