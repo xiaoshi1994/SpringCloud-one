@@ -7,6 +7,7 @@
   </parent>
   <artifactId>springCloud04-customer-7001</artifactId>
   <description>部门微服务消费者</description>
+	<!-- 使用ribbon + restTemplent的方式来调用微服务 -->
 
 	<dependencies>
 		<dependency><!-- 自己定义的api -->

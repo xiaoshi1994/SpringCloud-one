@@ -95,5 +95,7 @@
   	<module>springCloud04-Eureka-9003</module>
   	<module>springCloud04-prodect-8002</module>
   	<module>springCloud04-prodect-8003</module>
+  	<module>springCloud04-customer-7001-feign</module>
+  	<module>springCloud04-prodect-8001-Hystrix</module>
   </modules>
 </project>
