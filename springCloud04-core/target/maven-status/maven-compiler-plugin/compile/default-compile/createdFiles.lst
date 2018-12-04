@@ -1,2 +1,4 @@
 com\shi\core\model\Dept.class
+com\shi\core\service\DeptClientServiceFallbackFactory.class
+com\shi\core\service\DeptClientServiceFallbackFactory$1.class
 com\shi\core\service\DeptClientService.class

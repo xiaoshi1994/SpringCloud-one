@@ -97,5 +97,8 @@
   	<module>springCloud04-prodect-8003</module>
   	<module>springCloud04-customer-7001-feign</module>
   	<module>springCloud04-prodect-8001-Hystrix</module>
+  	<module>springCloud04-customer-hystrix-dashboard-6001</module>
+  	<module>springCloud04-zuul-getway-9527</module>
+  	<module>springCloud04-config-3344</module>
   </modules>
 </project>
