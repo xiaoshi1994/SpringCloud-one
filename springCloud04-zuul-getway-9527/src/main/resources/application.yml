@@ -1,0 +1,23 @@
+server:
+  port: 9527
+  
+spring:
+   application:
+    name: zuul-getway-9527
+zuul:
+  prefix: /shi   #访问前缀
+  ignored-services: "*"  #所有真实姓名进行隐藏
+  routes:
+    mydept.serviceId: SPRINGCLOUD04-PRODECT-8001  #真实访问的服务名称
+    mydept.path: /mydept/**    #虚拟访问名称
+      
+eureka: 
+  client: #客户端注册进eureka服务列表内
+    service-url: 
+      defaultZone: http://eureka9001.com:9001/eureka/,http://eureka9002.com:9002/eureka/,http://eureka9003.com:9003/eureka/
+
+info:
+  app.name: zuul-getway-9527
+  company.name: com.shi
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
